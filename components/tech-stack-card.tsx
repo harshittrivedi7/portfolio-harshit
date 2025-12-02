@@ -17,16 +17,16 @@ const techStack = [
 
 export function TechStackCard() {
   return (
-    <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:border-primary/50">
+    <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-4 md:p-8 transition-all duration-300 hover:border-primary/50">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative z-10">
-        <h2 className="mb-2 text-2xl font-bold tracking-tight text-foreground">Tech Stack</h2>
-        <p className="mb-6 text-xs text-muted-foreground">
+        <h2 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-foreground">Tech Stack</h2>
+        <p className="mb-4 md:mb-6 text-xs text-muted-foreground">
           Core technologies across game development, AI/ML, and backend systems
         </p>
 
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           {techStack.map((tech, index) => (
             <motion.div
               key={tech.name}
@@ -37,7 +37,7 @@ export function TechStackCard() {
               className="group/tech relative"
               title={tech.category}
             >
-              <div className="relative overflow-hidden rounded-lg bg-gradient-to-br p-4 text-center transition-all duration-300 h-full flex items-center justify-center">
+              <div className="relative overflow-hidden rounded-lg bg-gradient-to-br p-3 md:p-4 text-center transition-all duration-300 h-full flex items-center justify-center">
                 {/* Gradient background */}
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-25 group-hover/tech:opacity-45 transition-opacity duration-300`}
@@ -46,7 +46,7 @@ export function TechStackCard() {
                 {/* Neon border on hover */}
                 <div className="absolute inset-0 rounded-lg border border-primary opacity-0 transition-opacity duration-300 group-hover/tech:opacity-100 shadow-lg group-hover/tech:shadow-primary/50" />
 
-                <p className="relative font-semibold text-sm text-foreground group-hover/tech:text-primary transition-colors duration-300">
+                <p className="relative font-semibold text-xs md:text-sm text-foreground group-hover/tech:text-primary transition-colors duration-300">
                   {tech.name}
                 </p>
               </div>

@@ -26,9 +26,9 @@ export function HeroCard() {
           <div className="mb-0.5 inline-block">
             <span className="text-xs font-semibold text-primary uppercase tracking-widest">Welcome</span>
           </div>
-          <h1 className="mb-1 text-3xl font-bold tracking-tight text-foreground">Harshit Trivedi</h1>
-          <p className="mb-3 text-base font-semibold neon-text">Game Developer & AI/ML Engineer</p>
-          <p className="mb-4 text-xs text-muted-foreground leading-relaxed max-w-md">
+          <h1 className="mb-1 text-2xl md:text-3xl font-bold tracking-tight text-foreground">Harshit Trivedi</h1>
+          <p className="mb-3 text-sm md:text-base font-semibold neon-text">Game Developer & AI/ML Engineer</p>
+          <p className="mb-4 text-xs text-muted-foreground leading-relaxed max-w-lg">
             Specializing in high-performance game development with Unity, advanced machine learning systems, and
             scalable backend architecture. Currently focused on mobile game optimization and AI-driven solutions.
           </p>
@@ -43,7 +43,7 @@ export function HeroCard() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
-                className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-primary/25 transition-all text-sm h-9 px-3"
+                className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-primary/25 transition-all text-xs md:text-sm h-8 md:h-9 px-2 md:px-3"
               >
                 <Download className="w-3.5 h-3.5" />
                 Resume
@@ -63,7 +63,7 @@ export function HeroCard() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button variant="outline" className="gap-2 border-primary/30 hover:border-primary/50 bg-transparent text-sm h-9 px-3" onClick={() => {
+          <Button variant="outline" className="gap-2 border-primary/30 hover:border-primary/50 bg-transparent text-xs md:text-sm h-8 md:h-9 px-2 md:px-3" onClick={() => {
             document.getElementById('featured-project')?.scrollIntoView({ behavior: 'smooth' });
           }}>
             View Work
@@ -85,7 +85,7 @@ export function HeroCard() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/icon relative p-2 rounded-lg border border-border text-muted-foreground transition-all duration-300 hover:text-primary hover:border-primary hover:bg-primary/5"
+                className="group/icon relative p-3 rounded-lg border border-border text-muted-foreground transition-all duration-300 hover:text-primary hover:border-primary hover:bg-primary/5"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 title={link.label}

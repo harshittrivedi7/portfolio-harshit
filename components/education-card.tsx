@@ -21,11 +21,11 @@ const education = [
 
 export function EducationCard() {
   return (
-    <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:border-primary/50">
+    <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-4 md:p-8 transition-all duration-300 hover:border-primary/50">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative z-10">
-        <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">Education</h2>
+        <h2 className="mb-4 text-xl font-bold tracking-tight text-foreground md:mb-6 md:text-2xl">Education</h2>
 
         <div className="space-y-6">
           {education.map((edu, index) => (
@@ -34,10 +34,10 @@ export function EducationCard() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="relative pb-6 last:pb-0"
+              className="relative pb-4 last:pb-0 md:pb-6"
             >
               {index < education.length - 1 && (
-                <div className="absolute left-0 top-8 h-12 w-1 bg-gradient-to-b from-primary to-transparent" />
+                <div className="absolute left-0 top-8 h-10 w-1 bg-gradient-to-b from-primary to-transparent md:h-12" />
               )}
 
               <div className="flex gap-3">
@@ -47,9 +47,9 @@ export function EducationCard() {
 
                 <div className="flex-1">
                   <h3 className="font-semibold text-foreground">{edu.degree}</h3>
-                  <p className="text-sm text-primary mb-1">{edu.field}</p>
-                  <p className="text-xs text-muted-foreground mb-1">{edu.school}</p>
-                  <div className="flex flex-wrap gap-3 text-xs text-muted-foreground">
+                  <p className="text-xs text-primary mb-1 md:text-sm">{edu.field}</p>
+                  <p className="text-[10px] text-muted-foreground mb-1 md:text-xs">{edu.school}</p>
+                  <div className="flex flex-wrap gap-3 text-[10px] text-muted-foreground md:text-xs">
                     <span>{edu.duration || edu.percentage}</span>
                     {edu.cgpa && <span className="text-primary font-semibold">{edu.cgpa}</span>}
                   </div>

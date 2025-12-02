@@ -24,11 +24,11 @@ const certifications = [
 
 export function CertificationsCard() {
   return (
-    <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:border-primary/50">
+    <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-4 md:p-8 transition-all duration-300 hover:border-primary/50">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative z-10">
-        <h2 className="mb-6 text-2xl font-bold tracking-tight text-foreground">Certifications</h2>
+        <h2 className="mb-4 text-xl font-bold tracking-tight text-foreground md:mb-6 md:text-2xl">Certifications</h2>
 
         <div className="space-y-3">
           {certifications.map((cert, index) => (
@@ -38,12 +38,12 @@ export function CertificationsCard() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: index * 0.08 }}
               whileHover={{ x: 5 }}
-              className="group/cert flex gap-3 p-3 rounded-lg border border-border/50 bg-secondary transition-all duration-300 hover:border-primary/50"
+              className="group/cert flex gap-3 p-2 md:p-3 rounded-lg border border-border/50 bg-secondary transition-all duration-300 hover:border-primary/50"
             >
               <Certificate className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold text-foreground truncate">{cert.title}</p>
-                <p className="text-xs text-muted-foreground">{cert.issuer}</p>
+                <p className="text-xs font-semibold text-foreground truncate md:text-sm">{cert.title}</p>
+                <p className="text-[10px] text-muted-foreground md:text-xs">{cert.issuer}</p>
               </div>
               <ExternalLink className="w-3 h-3 text-muted-foreground opacity-0 transition-all duration-300 group-hover/cert:opacity-100 flex-shrink-0 mt-1" />
             </motion.div>

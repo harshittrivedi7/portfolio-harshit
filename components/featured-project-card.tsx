@@ -11,7 +11,7 @@ export function FeaturedProjectCard() {
 
       <div className="relative z-10 overflow-hidden">
         {/* Game Cover Visualization */}
-        <div className="relative h-72 w-full overflow-hidden bg-gradient-to-br from-blue-900 via-purple-900 to-black">
+        <div className="relative h-56 md:h-72 w-full overflow-hidden bg-gradient-to-br from-blue-900 via-purple-900 to-black">
           <motion.div
             className="absolute inset-0"
             initial={{ scale: 1 }}
@@ -49,7 +49,7 @@ export function FeaturedProjectCard() {
           </motion.div>
         </div>
 
-        <div className="p-8">
+        <div className="p-4 md:p-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
             <div className="mb-4 flex flex-wrap gap-2">
               <Badge className="bg-primary text-primary-foreground">Unity Engine</Badge>
@@ -57,7 +57,7 @@ export function FeaturedProjectCard() {
               <Badge className="bg-primary text-primary-foreground">AI Navigation</Badge>
             </div>
 
-            <h3 className="mb-2 text-3xl font-bold text-foreground">3D Mobile Racing Game</h3>
+            <h3 className="mb-2 text-2xl md:text-3xl font-bold text-foreground">3D Mobile Racing Game</h3>
             <p className="mb-1 text-sm text-primary font-semibold">Featured Project at Zetpeak (Aug - Nov 2025)</p>
 
             <p className="mb-6 text-sm text-muted-foreground leading-relaxed">
@@ -67,10 +67,10 @@ export function FeaturedProjectCard() {
               free-roam gameplay. Successfully reduced APK size by 35% through model compression and asset optimization.
             </p>
 
-            <div className="grid gap-4 text-sm sm:grid-cols-3 mb-6">
+            <div className="grid gap-4 text-sm grid-cols-1 sm:grid-cols-3 mb-6">
               <motion.div
                 whileHover={{ y: -2 }}
-                className="flex items-start gap-3 p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
+                className="flex items-start gap-3 p-2 md:p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
               >
                 <Zap className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                 <div>
@@ -80,7 +80,7 @@ export function FeaturedProjectCard() {
               </motion.div>
               <motion.div
                 whileHover={{ y: -2 }}
-                className="flex items-start gap-3 p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
+                className="flex items-start gap-3 p-2 md:p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
               >
                 <Users className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                 <div>
@@ -90,7 +90,7 @@ export function FeaturedProjectCard() {
               </motion.div>
               <motion.div
                 whileHover={{ y: -2 }}
-                className="flex items-start gap-3 p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
+                className="flex items-start gap-3 p-2 md:p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
               >
                 <Package className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                 <div>
@@ -105,7 +105,7 @@ export function FeaturedProjectCard() {
             </p>
           </motion.div>
         </div>
-      </div>
+        </div>
     </div>
   )
 }

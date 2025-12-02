@@ -11,7 +11,7 @@ export function UnrealEngineProjectCard() {
 
       <div className="relative z-10 overflow-hidden">
         {/* Game Cover Visualization */}
-        <div className="relative h-72 w-full overflow-hidden bg-gradient-to-br from-red-950 via-gray-900 to-black">
+        <div className="relative h-56 md:h-72 w-full overflow-hidden bg-gradient-to-br from-red-950 via-gray-900 to-black">
           <motion.div
             className="absolute inset-0"
             initial={{ scale: 1 }}
@@ -48,7 +48,7 @@ export function UnrealEngineProjectCard() {
           </motion.div>
         </div>
 
-        <div className="p-8">
+        <div className="p-4 md:p-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
             <div className="mb-4 flex flex-wrap gap-2">
               <Badge className="bg-primary text-primary-foreground">Unreal Engine 5</Badge>
@@ -57,7 +57,7 @@ export function UnrealEngineProjectCard() {
               <Badge className="bg-primary text-primary-foreground">Self-Guided</Badge>
             </div>
 
-            <h3 className="mb-2 text-3xl font-bold text-foreground">3D Racing Game - Unreal Engine 5</h3>
+            <h3 className="mb-2 text-2xl md:text-3xl font-bold text-foreground">3D Racing Game - Unreal Engine 5</h3>
             <p className="mb-1 text-sm text-primary font-semibold">Self-Guided Learning Project</p>
 
             <p className="mb-6 text-sm text-muted-foreground leading-relaxed">
@@ -68,10 +68,10 @@ export function UnrealEngineProjectCard() {
               and complex systems integration in a professional game engine environment.
             </p>
 
-            <div className="grid gap-4 text-sm sm:grid-cols-3 mb-6">
+            <div className="grid gap-4 text-sm grid-cols-1 sm:grid-cols-3 mb-6">
               <motion.div
                 whileHover={{ y: -2 }}
-                className="flex items-start gap-3 p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
+                className="flex items-start gap-3 p-2 md:p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
               >
                 <Zap className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                 <div>
@@ -81,7 +81,7 @@ export function UnrealEngineProjectCard() {
               </motion.div>
               <motion.div
                 whileHover={{ y: -2 }}
-                className="flex items-start gap-3 p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
+                className="flex items-start gap-3 p-2 md:p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
               >
                 <Gamepad2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                 <div>
@@ -91,7 +91,7 @@ export function UnrealEngineProjectCard() {
               </motion.div>
               <motion.div
                 whileHover={{ y: -2 }}
-                className="flex items-start gap-3 p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
+                className="flex items-start gap-3 p-2 md:p-3 rounded-lg bg-secondary/30 border border-border/50 hover:border-primary/30 transition-all"
               >
                 <Rocket className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                 <div>

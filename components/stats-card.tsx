@@ -16,9 +16,9 @@ export function StatsCard() {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="relative z-10">
-        <h2 className="mb-4 text-xl font-bold tracking-tight text-foreground">Quick Stats</h2>
+        <h2 className="mb-4 text-lg md:text-xl font-bold tracking-tight text-foreground">Quick Stats</h2>
 
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {stats.map((stat, index) => {
             const Icon = stat.icon
             return (
@@ -28,7 +28,7 @@ export function StatsCard() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.08 }}
                 whileHover={{ y: -4 }}
-                className="group/stat relative overflow-hidden rounded-lg border border-border/50 bg-secondary/40 p-3 transition-all duration-300 hover:border-primary/50 hover:bg-secondary/60"
+                className="group/stat relative overflow-hidden rounded-lg border border-border/50 bg-secondary/40 p-2 md:p-3 transition-all duration-300 hover:border-primary/50 hover:bg-secondary/60"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover/stat:opacity-100" />
 
@@ -37,7 +37,7 @@ export function StatsCard() {
                     <Icon className="w-4 h-4 text-primary" />
                   </div>
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">{stat.label}</p>
-                  <p className="text-2xl font-bold text-primary mt-1 mb-0.5">{stat.value}</p>
+                  <p className="text-xl md:text-2xl font-bold text-primary mt-1 mb-0.5">{stat.value}</p>
                   <p className="text-xs text-muted-foreground leading-tight">{stat.detail}</p>
                 </div>
               </motion.div>
@@ -45,7 +45,7 @@ export function StatsCard() {
           })}
         </div>
 
-        <p className="mt-4 text-xs text-muted-foreground border-t border-border/30 pt-3">
+        <p className="mt-4 text-[10px] md:text-xs text-muted-foreground border-t border-border/30 pt-3">
           Expected graduation: May 2026 • B.Tech in AI/ML
         </p>
       </div>

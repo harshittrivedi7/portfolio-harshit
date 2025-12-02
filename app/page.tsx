@@ -43,14 +43,14 @@ export default function Portfolio() {
         </div>
 
         <motion.div
-          className="grid auto-rows-max gap-4 lg:grid-cols-4"
+          className="grid auto-rows-max gap-4 md:grid-cols-2 lg:grid-cols-4"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           {/* Hero Card - Large, span 2 cols */}
           <motion.div
-            className="md:col-span-2"
+            className="md:col-span-1 lg:col-span-2"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -59,7 +59,7 @@ export default function Portfolio() {
 
           {/* Stats Card - Horizontal, span 2 cols */}
           <motion.div
-            className="md:col-span-2"
+            className="md:col-span-1 lg:col-span-2"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -68,7 +68,7 @@ export default function Portfolio() {
 
           {/* Tech Stack Card - Full width below */}
           <motion.div
-            className="md:col-span-4"
+            className="md:col-span-2"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -78,7 +78,7 @@ export default function Portfolio() {
           {/* Featured Project - Large, full width */}
           <motion.div
             id="featured-project"
-            className="md:col-span-4"
+            className="md:col-span-2"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -87,7 +87,7 @@ export default function Portfolio() {
 
           {/* Unreal Engine 5 Racing Game - Self-Guided Project */}
           <motion.div
-            className="md:col-span-4"
+            className="md:col-span-2"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -97,7 +97,7 @@ export default function Portfolio() {
           {/* Experience Card - Left, full height */}
           <motion.div
             id="experience"
-            className="md:col-span-2"
+            className="md:col-span-1 lg:col-span-2"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -106,7 +106,7 @@ export default function Portfolio() {
 
           {/* Skills + Education stack - Right */}
           <motion.div
-            className="md:col-span-2 flex flex-col gap-4"
+            className="md:col-span-1 lg:col-span-2 flex flex-col gap-4"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -115,7 +115,7 @@ export default function Portfolio() {
 
           {/* Skills Card - Full width */}
           <motion.div
-            className="md:col-span-4"
+            className="md:col-span-2"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -124,7 +124,7 @@ export default function Portfolio() {
 
           {/* Achievements and Certifications - Side by side */}
           <motion.div
-            className="md:col-span-2"
+            className="md:col-span-1 lg:col-span-2"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -132,7 +132,7 @@ export default function Portfolio() {
           </motion.div>
 
           <motion.div
-            className="md:col-span-2"
+            className="md:col-span-1 lg:col-span-2"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
@@ -142,7 +142,7 @@ export default function Portfolio() {
           {/* Projects Grid - Full width */}
           <motion.div
             id="projects"
-            className="md:col-span-4"
+            className="md:col-span-2"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
